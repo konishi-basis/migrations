@@ -484,7 +484,8 @@ class CakeMigration extends CakeObject {
 
 					$this->_invokeCallbacks('beforeAction', $type . '_field', $callbackData);
 					if (@$this->db->execute($sql) === false) {
-						throw new MigrationException($this, sprintf(__d('migrations', 'SQL Error: %s'), $this->db->error));
+					    print("supwpwpw");
+					//	throw new MigrationException($this, sprintf(__d('migrations', 'SQL Error: %s'), $this->db->error));
 					}
 					$this->_invokeCallbacks('afterAction', $type . '_field', $callbackData);
 				}
